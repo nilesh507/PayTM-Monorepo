@@ -17,6 +17,9 @@ jobs:
       
       - name: Install Dependencies
         run: npm install
+      
+      - name: Copy Environment Variable
+        run: cd packages/db && cp .env.example .env && cd ../..
 
       - name: Generate Client
         run:  npm run db:generate
