@@ -5,6 +5,7 @@
 docker run  -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
 ```
 
+
 -   Copy over all .env.example files to .env
 -   Update .env files everywhere with the right db url
 -   Go to `packages/db`
