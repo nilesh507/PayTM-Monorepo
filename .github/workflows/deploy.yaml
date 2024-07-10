@@ -20,7 +20,11 @@ jobs:
       
       - name: Build and Push Docker image
         uses: docker/build-push-actions@v2
-        tags: nileshbhoi/paytm-user-app:latest
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: nileshbhoi/paytm-user-app:latest
 
       - name: Verify Pushed Image
         run: docker pull nileshbhoi/paytm-user-app:latest
