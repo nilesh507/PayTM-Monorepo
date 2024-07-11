@@ -15,8 +15,19 @@ docker run  -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
 -   Copy over all .env.example files to .env
 -   Update .env files everywhere with the right db url
 -   Go to `packages/db`
-    -   npx prisma migrate dev
-    -   npx prisma db seed
+    -   ```jsx npx prisma migrate dev```
+    -   ```jsx npx prisma db seed ```
 -   Go to `apps/user-app` , run `npm run dev`
 -   Try logging in using phone - 1111111111 , password - alice (See `seed.ts`)
+
+---
+## Merchant App
+<img width="1511" alt="image" src="https://github.com/nilesh507/PayTM-Monorepo/assets/56382235/0abfef5a-5119-4786-982b-c6a414e409a2">
+---
+## User App
+<img width="1512" alt="image" src="https://github.com/nilesh507/PayTM-Monorepo/assets/56382235/0c7b07cb-d602-40da-9003-1374823c9bd4">
+
+<img width="1512" alt="image" src="https://github.com/nilesh507/PayTM-Monorepo/assets/56382235/74b47ff3-c18a-47fa-9b55-3d5d0e26a4b6">
+
+
 
